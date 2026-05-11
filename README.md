@@ -1,4 +1,4 @@
-# Workstoday
+# Works today
 ## Script transformando Ptax diária em média trimestral
 
 Enquanto escrevia parte de um projeto de pesquisa sobre a dívida pública brasileira me ocorreu que precisaria comrpar dados de sua composição. No entanto o primeiro problema a enfrentar é que os dados da dívida externa estão dolarizados no SGS do BCB. para ter uma ideia da proporção dessa parte da dívida no bolo total irei convertê-la para reais em moeda corrente. Para isso usarei a média trimestral da Ptax referente aquele valor da dívida.
