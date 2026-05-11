@@ -5,7 +5,7 @@ Enquanto escrevia parte de um projeto de pesquisa sobre a dívida pública brasi
 
 Contudo a série de Ptax do BCB é diária sendo necessário calcular a média trimestral e transformar a tabela para que ambas, taxa de conversão e valor estejam coincidentes.
 
-## Primeiro passo: carregar pacotes e criar as varáveis
+## Primeiro passo: carregar pacotes e criar as variáveis
 
 ```{r}
 library(readxl)
