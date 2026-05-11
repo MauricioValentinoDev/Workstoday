@@ -5,7 +5,7 @@ Enquanto escrevia parte de um projeto de pesquisa sobre a dívida pública brasi
 
 Contudo a série de Ptax do BCB é diária sendo necessário calcular a média trimestral e transformar a tabela para que ambas, taxa de conversão e valor estejam coincidentes.
 
-#Primeiro passo: carregar pacotes e criar as varáveis
+## Primeiro passo: carregar pacotes e criar as varáveis
 
 ```{r}
 library(readxl)
@@ -27,7 +27,7 @@ ptax <- ptax %>%
   )
 
 ```
-# Segundo Passo,agrupar por ano e trimestre e calcular a média
+## Segundo Passo,agrupar por ano e trimestre e calcular a média
 
 ```{r}
 ptax_trimestral <- ptax %>%
@@ -35,7 +35,7 @@ ptax_trimestral <- ptax %>%
   summarise(media_trimestral = mean(valor, na.rm = TRUE))%>%
   ungroup()
 ```
-#Cria uma data final
+## Cria uma data final
 Como meus dados do SGS do BCB para a dívida externa estão agrupados no dia 30 do último mês de cada trimestre, meus dados de média de Ptax também devem estar.
 ```{r}
 ptax_trimestral <- ptax_trimestral %>%
@@ -45,7 +45,7 @@ ptax_trimestral <- ptax_trimestral %>%
   )
 
 ```
-#Agrupando tudo
+## Agrupando tudo
 Por fim, vamos limpar o indesejável e pegar a planilha como queremos.
 
 ```{r}
